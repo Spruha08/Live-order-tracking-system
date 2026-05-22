@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🍕 Restaurant Dashboard</h1>
+
+    <p>
+        Manage and update food delivery orders
+    </p>
+
+</header>
+
+
+<section class="customer-section">
+
+    <h2>Create New Order</h2>
+
+    <div class="form-section">
+
+        <input type="text"
+               id="customerName"
+               placeholder="Customer Name">
+
+        <input type="text"
+               id="productName"
+               placeholder="Food Item">
+
+        <select id="status">
+
+            <option value="Preparing">
+                Preparing
+            </option>
+
+            <option value="On the Way">
+                On the Way
+            </option>
+
+            <option value="Delivered">
+                Delivered
+            </option>
+
+        </select>
+
+        <button onclick="createOrder()">
+            Create Order
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="tracking-section">
+
+    <div id="notification"
+         class="notification">
+
+    </div>
+
+    <h2>
+        📦 Restaurant Order Management
+    </h2>
+
+    <div id="adminOrdersContainer"
+         class="orders-container">
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
